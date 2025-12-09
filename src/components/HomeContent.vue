@@ -1,7 +1,7 @@
 <template>
   <div class="hero-content">
     <h1 class="hero-title">
-      Hi, I'm <span class="highlight">Jong</span>
+      Hi, I'm <span class="highlight">Al John Edejer Orpilla</span>
     </h1>
     <p class="hero-subtitle">Des</p>
     <p class="hero-description">

@@ -43,6 +43,9 @@
             @click="navigateToSlide(index - 1)">
       </span>
     </div>
+
+    <!-- Chatbot Widget -->
+    <ChatbotWidget />
   </div>
 </template>
 
@@ -56,6 +59,7 @@ import SkillsSlide from './components/SkillsSlide.vue';
 import ProjectsSlide from './components/ProjectsSlide.vue';
 import ContactSlide from './components/ContactSlide.vue';
 import ProjectDetail from './components/ProjectDetail.vue';
+import ChatbotWidget from './components/ChatbotWidget.vue';
 
 // Reactive state
 const currentSlide = ref(0);
@@ -69,9 +73,9 @@ const navItems = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
 // Stats data
 const stats = [
-  { value: '1+', label: 'Years Experience' },
-  { value: '10+', label: 'Projects Completed' },
-  { value: '10+', label: 'Happy Clients' }
+  { value: '2+', label: 'Years Experience' },
+  { value: '1', label: 'Projects Completed' },
+  { value: '6', label: 'Happy Clients' }
 ];
 
 // Skills data

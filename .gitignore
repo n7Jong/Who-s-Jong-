@@ -5,3 +5,6 @@ dist
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# Environment variables (contains API keys)
+.env
