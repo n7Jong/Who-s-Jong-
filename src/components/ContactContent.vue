@@ -69,8 +69,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS with public key
+onMounted(() => {
+  emailjs.init('5_58lLK_G13DczpUQ');
+});
 
 defineProps({
   contactDetails: {
@@ -103,8 +108,9 @@ const handleSubmit = async () => {
   try {
     // EmailJS configuration
     const serviceID = 'service_uongl5o';
-    const templateID = 'template_4zt7d8c';
-    const publicKey = '5_58lLK_G13DczpUQ';
+    const templateID = 'template_70izgve';
+
+    console.log('Sending email with:', { serviceID, templateID });
 
     // Prepare template parameters
     const templateParams = {
@@ -113,10 +119,15 @@ const handleSubmit = async () => {
       subject: formData.value.subject,
       message: formData.value.message,
       to_name: 'Al John Orpilla',
+      reply_to: formData.value.email,
     };
 
-    // Send email via EmailJS
-    await emailjs.send(serviceID, templateID, templateParams, publicKey);
+    console.log('Template params:', templateParams);
+
+    // Send email via EmailJS (public key already initialized in onMounted)
+    const response = await emailjs.send(serviceID, templateID, templateParams);
+    
+    console.log('EmailJS Response:', response);
 
     // Success
     submitMessage.value = `Thank you, ${formData.value.name}! Your message has been sent successfully. I'll get back to you soon.`;
@@ -131,7 +142,9 @@ const handleSubmit = async () => {
 
   } catch (error) {
     console.error('EmailJS Error:', error);
-    submitError.value = 'Failed to send message. Please try again or contact me directly via email.';
+    console.error('Error status:', error.status);
+    console.error('Error text:', error.text);
+    submitError.value = `Failed to send message: ${error.text || error.message}. Please verify the template ID exists in your EmailJS dashboard.`;
   } finally {
     isSubmitting.value = false;
   }
