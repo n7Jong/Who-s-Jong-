@@ -3,9 +3,9 @@
     <h1 class="hero-title">
       Hi, I'm <span class="highlight">Al John Edejer Orpilla</span>
     </h1>
-    <p class="hero-subtitle">Des</p>
+    <p class="hero-subtitle">.</p>
     <p class="hero-description">
-      Des
+      .
     </p>
     <div class="hero-buttons">
       <button class="btn btn-primary" @click="$emit('navigate', 3)">View My Work</button>

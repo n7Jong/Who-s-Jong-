@@ -294,17 +294,18 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Michroma', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.7;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     max-width: 500px;
@@ -409,7 +410,7 @@ body {
    ============================================ */
 .section-title {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3.5rem;
     position: relative;
     font-family: 'Orbitron', sans-serif;
@@ -423,8 +424,7 @@ body {
     content: '';
     position: absolute;
     top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 60px;
     height: 4px;
     background: var(--gradient-dark);
@@ -434,8 +434,7 @@ body {
     content: '';
     position: absolute;
     bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100px;
     height: 2px;
     background: var(--gradient-primary);
