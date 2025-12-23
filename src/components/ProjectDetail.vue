@@ -129,6 +129,9 @@ defineEmits(['close']);
   max-width: 1000px;
   overflow-y: auto;
   overflow-x: hidden;
+  padding: 2rem;
+  padding-top: 6rem;
+  box-sizing: border-box;
 }
 
 .back-button {
@@ -161,6 +164,8 @@ defineEmits(['close']);
 
 .project-detail-container {
   animation: fadeInUp 0.8s ease;
+  width: 100%;
+  max-width: 100%;
 }
 
 .project-header {
@@ -168,6 +173,8 @@ defineEmits(['close']);
   margin-bottom: 3rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid var(--color-3);
+  clear: both;
+  overflow: hidden;
 }
 
 .project-icon-large {
@@ -224,6 +231,7 @@ defineEmits(['close']);
 
 .project-overview {
   margin-bottom: 3rem;
+  clear: both;
 }
 
 .project-overview h2,

@@ -95,6 +95,18 @@ const projects = [
     image: 'https://res.cloudinary.com/dy9tkp58u/image/upload/v1766485636/mwn1yn1ga2pkpeqh17i7.png',
     tags: ['HTML5', 'JavaScript', 'Tailwind CSS']
   },
+  {
+    title: 'nrfndr',
+    description: 'A band music artist website.',
+    icon: 'fas fa-music',
+    tags: ['Web Design', 'Music', 'Artist']
+  },
+  {
+    title: 'FitLyF',
+    description: 'A comprehensive wellness ecosystem that bridges the gap between physical training and professional health guidance. We offer a 360-degree approach to your well-being, combining science-backed fitness programs with one-on-one health consultations to help you thrive, not just survive.',
+    icon: 'fas fa-heartbeat',
+    tags: ['Wellness', 'Fitness', 'Health']
+  }
 ];
 
 // Contact details
