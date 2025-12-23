@@ -10,7 +10,7 @@
         <!-- Project Header -->
         <div class="project-header">
           <div class="project-icon-large">
-            <i class="fas fa-blog"></i>
+            <img src="https://res.cloudinary.com/dy9tkp58u/image/upload/v1766485636/mwn1yn1ga2pkpeqh17i7.png" alt="UC InTTO Website" />
           </div>
           <h1 class="project-title">UC InTTO Website</h1>
           <p class="project-subtitle">Innovation Technology and Transfer Office</p>
@@ -187,6 +187,15 @@ defineEmits(['close']);
   position: absolute;
   inset: 6px;
   background: var(--bg-primary);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.project-icon-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 

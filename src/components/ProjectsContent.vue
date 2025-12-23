@@ -2,7 +2,8 @@
   <div class="projects-grid">
     <div class="project-card" v-for="project in projects" :key="project.title">
       <div class="project-image">
-        <i :class="project.icon"></i>
+        <img v-if="project.image" :src="project.image" :alt="project.title" />
+        <i v-else :class="project.icon"></i>
       </div>
       <div class="project-content">
         <h3>{{ project.title }}</h3>

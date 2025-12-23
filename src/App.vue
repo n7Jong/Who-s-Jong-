@@ -92,7 +92,7 @@ const projects = [
   {
     title: 'UC InTTO Website',
     description: 'My First Project as Internship Developer for University of the Cordilleras - Innovation Technology and Transfer Office.',
-    icon: 'fas fa-blog',
+    image: 'https://res.cloudinary.com/dy9tkp58u/image/upload/v1766485636/mwn1yn1ga2pkpeqh17i7.png',
     tags: ['HTML5', 'JavaScript', 'Tailwind CSS']
   },
 ];
