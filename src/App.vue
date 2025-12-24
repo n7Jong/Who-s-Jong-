@@ -233,9 +233,6 @@ onMounted(() => {
   document.addEventListener('keydown', handleKeyDown);
   document.addEventListener('touchstart', handleTouchStart);
   document.addEventListener('touchend', handleTouchEnd);
-  
-  console.log('%c Welcome to Jong\'s Portfolio! ', 'background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; font-size: 20px; padding: 10px; border-radius: 5px;');
-  console.log('%c Navigate with arrow keys, swipe, or click navigation! ', 'color: #6366f1; font-size: 14px;');
 });
 
 onUnmounted(() => {

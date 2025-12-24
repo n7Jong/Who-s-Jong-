@@ -101,6 +101,4 @@ app.get('/api/health', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Chatbot backend server running on http://localhost:${PORT}`);
-  console.log(`📝 API endpoint: http://localhost:${PORT}/api/chat`);
 });

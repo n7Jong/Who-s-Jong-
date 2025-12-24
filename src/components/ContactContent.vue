@@ -110,8 +110,6 @@ const handleSubmit = async () => {
     const serviceID = 'service_uongl5o';
     const templateID = 'template_70izgve';
 
-    console.log('Sending email with:', { serviceID, templateID });
-
     // Prepare template parameters
     const templateParams = {
       from_name: formData.value.name,
@@ -122,13 +120,9 @@ const handleSubmit = async () => {
       reply_to: formData.value.email,
     };
 
-    console.log('Template params:', templateParams);
-
     // Send email via EmailJS (public key already initialized in onMounted)
     const response = await emailjs.send(serviceID, templateID, templateParams);
     
-    console.log('EmailJS Response:', response);
-
     // Success
     submitMessage.value = `Thank you, ${formData.value.name}! Your message has been sent successfully. I'll get back to you soon.`;
     
